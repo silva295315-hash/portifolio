@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Alex Rivera | Portfólio</title>
+    <!-- Fonts & Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">Portifolio</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="badge"><i class="fas fa-code"></i> Adriana Silva Santos</span>
+                    <h1>Transformo <span class="highlight">ideias</span> em soluções</h1>
+                    <div class="typewriter" id="typewriter"></div>
+                    <a href="#projetos" class="btn">Explorar projetos <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-image">
+                    <img src="perfil.jpeg" alt="foto de perfil"
+                        onerror="this.src='https://randomuser.me/api/portraits/men/42.jpg'">
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre mim</h2>
+                <div class="about-grid">
+                    <div class="about-img">
+                        <img src="perfil.jpeg" alt="foto de perfil.png"
+                            onerror="this.src='https://randomuser.me/api/portraits/men/42.jpg'">
+                    </div>
+                    <div class="about-text">
+                        <p>Adriana Silva Santos
+                            Desenvolvedora de Sistemas para Internet & Estrategista Digital
+                            Profissional em transição de carreira, unindo 9 anos de experiência no setor público à
+                            graduação em Sistemas para Internet. Minha trajetória combina a base analítica da Pedagogia
+                            com o foco técnico em desenvolvimento de sistemas, buscando sempre alinhar tecnologia,
+                            usabilidade e resultados..</p>
+                        <p></p>
+                        <div class="skills">
+                            <span>HTML</span><span>CSS</span><span>JS</span>
+                               
+                        </div>
+                        <a href="#contato" class="btn" style="background: #334155;">Vamos criar algo <i
+                                class="fas fa-rocket"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <div class="container">
+                <h2>Projetos recentes</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="projt.jpeg" alt="foto projeto"
+                                onerror="this.src='https://picsum.photos/id/20/400/250'">
+                        </div>
+                        <div class="project-info">
+                            <h3>mario em teste</h3>
+                            <p>em Teste.</p>
+                            <div class="project-tags"><span>React</span></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Vamos conversar</h2>
+                <div class="contact-container">
+                    <p style="text-align: center; max-width: 550px;">Preencha seus dados e clique no botão: sua mensagem
+                        será enviada diretamente para meu WhatsApp. Responderei o mais rápido possível!</p>
+                    <form id="whatsapp-form" class="contact-form">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Nome completo</label>
+                            <input type="text" id="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-envelope"></i> E-mail</label>
+                            <input type="email" id="email" placeholder="voce@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-comment"></i> Mensagem</label>
+                            <textarea id="mensagem" placeholder="Fale sobre seu projeto, dúvida ou orçamento..."
+                                rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Enviar para o
+                            WhatsApp</button>
+                    </form>
+                    <div class="contact-links">
+                        <a href="mailto:alex@rivera.dev" class="contact-card">
+                            <i class="fas fa-envelope"></i> <span>Silva295315@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/alexrivera-dev" target="_blank" rel="noopener" class="contact-card">
+                            <i class="fab fa-github"></i> <span>/alexrivera-dev</span>
+                        </a>
+                    </div>
+                    <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.7;"><i class="fas fa-shield-alt"></i> Seus
+                        dados são enviados via link criptografado do WhatsApp.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Adriana Silva Santos
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
